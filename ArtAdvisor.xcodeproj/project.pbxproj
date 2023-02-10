@@ -14,6 +14,17 @@
 		FC931B3329953A8A00E9DF5A /* ArtAdvisorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC931B3229953A8A00E9DF5A /* ArtAdvisorTests.swift */; };
 		FC931B3D29953A8A00E9DF5A /* ArtAdvisorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC931B3C29953A8A00E9DF5A /* ArtAdvisorUITests.swift */; };
 		FC931B3F29953A8A00E9DF5A /* ArtAdvisorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC931B3E29953A8A00E9DF5A /* ArtAdvisorUITestsLaunchTests.swift */; };
+		FC931B5229953AB800E9DF5A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC931B5129953AB800E9DF5A /* WidgetKit.framework */; };
+		FC931B5429953AB800E9DF5A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC931B5329953AB800E9DF5A /* SwiftUI.framework */; };
+		FC931B5729953AB800E9DF5A /* ArtAdvisorWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC931B5629953AB800E9DF5A /* ArtAdvisorWidgetBundle.swift */; };
+		FC931B5929953AB800E9DF5A /* ArtAdvisorWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC931B5829953AB800E9DF5A /* ArtAdvisorWidgetLiveActivity.swift */; };
+		FC931B5B29953AB800E9DF5A /* ArtAdvisorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC931B5A29953AB800E9DF5A /* ArtAdvisorWidget.swift */; };
+		FC931B5E29953AB900E9DF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC931B5D29953AB900E9DF5A /* Assets.xcassets */; };
+		FC931B6029953AB900E9DF5A /* ArtAdvisorWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FC931B5C29953AB800E9DF5A /* ArtAdvisorWidget.intentdefinition */; };
+		FC931B6129953AB900E9DF5A /* ArtAdvisorWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FC931B5C29953AB800E9DF5A /* ArtAdvisorWidget.intentdefinition */; };
+		FC931B6429953AB900E9DF5A /* ArtAdvisorWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FC931B4F29953AB800E9DF5A /* ArtAdvisorWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FCE6639B299576B800592838 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE6639A299576B800592838 /* UserModel.swift */; };
+		FCE6639C299578E600592838 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE6639A299576B800592838 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +42,28 @@
 			remoteGlobalIDString = FC931B1D29953A8A00E9DF5A;
 			remoteInfo = ArtAdvisor;
 		};
+		FC931B6229953AB900E9DF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC931B1629953A8A00E9DF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC931B4E29953AB800E9DF5A;
+			remoteInfo = ArtAdvisorWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC931B6829953AB900E9DF5A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC931B6429953AB900E9DF5A /* ArtAdvisorWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FC931B1E29953A8A00E9DF5A /* ArtAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +76,18 @@
 		FC931B3829953A8A00E9DF5A /* ArtAdvisorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtAdvisorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC931B3C29953A8A00E9DF5A /* ArtAdvisorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtAdvisorUITests.swift; sourceTree = "<group>"; };
 		FC931B3E29953A8A00E9DF5A /* ArtAdvisorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtAdvisorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC931B4F29953AB800E9DF5A /* ArtAdvisorWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ArtAdvisorWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC931B5129953AB800E9DF5A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FC931B5329953AB800E9DF5A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FC931B5629953AB800E9DF5A /* ArtAdvisorWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtAdvisorWidgetBundle.swift; sourceTree = "<group>"; };
+		FC931B5829953AB800E9DF5A /* ArtAdvisorWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtAdvisorWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		FC931B5A29953AB800E9DF5A /* ArtAdvisorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtAdvisorWidget.swift; sourceTree = "<group>"; };
+		FC931B5C29953AB800E9DF5A /* ArtAdvisorWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ArtAdvisorWidget.intentdefinition; sourceTree = "<group>"; };
+		FC931B5D29953AB900E9DF5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC931B5F29953AB900E9DF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC931B6929953BFD00E9DF5A /* ArtAdvisor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArtAdvisor.entitlements; sourceTree = "<group>"; };
+		FC931B6A29953C1E00E9DF5A /* ArtAdvisorWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArtAdvisorWidgetExtension.entitlements; sourceTree = "<group>"; };
+		FCE6639A299576B800592838 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,15 +112,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC931B4C29953AB800E9DF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC931B5429953AB800E9DF5A /* SwiftUI.framework in Frameworks */,
+				FC931B5229953AB800E9DF5A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FC931B1529953A8A00E9DF5A = {
 			isa = PBXGroup;
 			children = (
+				FC931B6A29953C1E00E9DF5A /* ArtAdvisorWidgetExtension.entitlements */,
 				FC931B2029953A8A00E9DF5A /* ArtAdvisor */,
 				FC931B3129953A8A00E9DF5A /* ArtAdvisorTests */,
 				FC931B3B29953A8A00E9DF5A /* ArtAdvisorUITests */,
+				FC931B5529953AB800E9DF5A /* ArtAdvisorWidget */,
+				FC931B5029953AB800E9DF5A /* Frameworks */,
 				FC931B1F29953A8A00E9DF5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +143,7 @@
 				FC931B1E29953A8A00E9DF5A /* ArtAdvisor.app */,
 				FC931B2E29953A8A00E9DF5A /* ArtAdvisorTests.xctest */,
 				FC931B3829953A8A00E9DF5A /* ArtAdvisorUITests.xctest */,
+				FC931B4F29953AB800E9DF5A /* ArtAdvisorWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,10 +151,12 @@
 		FC931B2029953A8A00E9DF5A /* ArtAdvisor */ = {
 			isa = PBXGroup;
 			children = (
+				FC931B6929953BFD00E9DF5A /* ArtAdvisor.entitlements */,
 				FC931B2129953A8A00E9DF5A /* ArtAdvisorApp.swift */,
 				FC931B2329953A8A00E9DF5A /* ContentView.swift */,
 				FC931B2529953A8A00E9DF5A /* Assets.xcassets */,
 				FC931B2729953A8A00E9DF5A /* Preview Content */,
+				FCE6639A299576B800592838 /* UserModel.swift */,
 			);
 			path = ArtAdvisor;
 			sourceTree = "<group>";
@@ -127,6 +186,28 @@
 			path = ArtAdvisorUITests;
 			sourceTree = "<group>";
 		};
+		FC931B5029953AB800E9DF5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC931B5129953AB800E9DF5A /* WidgetKit.framework */,
+				FC931B5329953AB800E9DF5A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC931B5529953AB800E9DF5A /* ArtAdvisorWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FC931B5629953AB800E9DF5A /* ArtAdvisorWidgetBundle.swift */,
+				FC931B5829953AB800E9DF5A /* ArtAdvisorWidgetLiveActivity.swift */,
+				FC931B5A29953AB800E9DF5A /* ArtAdvisorWidget.swift */,
+				FC931B5C29953AB800E9DF5A /* ArtAdvisorWidget.intentdefinition */,
+				FC931B5D29953AB900E9DF5A /* Assets.xcassets */,
+				FC931B5F29953AB900E9DF5A /* Info.plist */,
+			);
+			path = ArtAdvisorWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +218,12 @@
 				FC931B1A29953A8A00E9DF5A /* Sources */,
 				FC931B1B29953A8A00E9DF5A /* Frameworks */,
 				FC931B1C29953A8A00E9DF5A /* Resources */,
+				FC931B6829953AB900E9DF5A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FC931B6329953AB900E9DF5A /* PBXTargetDependency */,
 			);
 			name = ArtAdvisor;
 			productName = ArtAdvisor;
@@ -183,6 +266,23 @@
 			productReference = FC931B3829953A8A00E9DF5A /* ArtAdvisorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FC931B4E29953AB800E9DF5A /* ArtAdvisorWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC931B6529953AB900E9DF5A /* Build configuration list for PBXNativeTarget "ArtAdvisorWidgetExtension" */;
+			buildPhases = (
+				FC931B4B29953AB800E9DF5A /* Sources */,
+				FC931B4C29953AB800E9DF5A /* Frameworks */,
+				FC931B4D29953AB800E9DF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtAdvisorWidgetExtension;
+			productName = ArtAdvisorWidgetExtension;
+			productReference = FC931B4F29953AB800E9DF5A /* ArtAdvisorWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +304,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = FC931B1D29953A8A00E9DF5A;
 					};
+					FC931B4E29953AB800E9DF5A = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = FC931B1929953A8A00E9DF5A /* Build configuration list for PBXProject "ArtAdvisor" */;
@@ -222,6 +325,7 @@
 				FC931B1D29953A8A00E9DF5A /* ArtAdvisor */,
 				FC931B2D29953A8A00E9DF5A /* ArtAdvisorTests */,
 				FC931B3729953A8A00E9DF5A /* ArtAdvisorUITests */,
+				FC931B4E29953AB800E9DF5A /* ArtAdvisorWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +354,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC931B4D29953AB800E9DF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC931B5E29953AB900E9DF5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,6 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC931B2429953A8A00E9DF5A /* ContentView.swift in Sources */,
+				FC931B6129953AB900E9DF5A /* ArtAdvisorWidget.intentdefinition in Sources */,
+				FCE6639B299576B800592838 /* UserModel.swift in Sources */,
 				FC931B2229953A8A00E9DF5A /* ArtAdvisorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +393,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC931B4B29953AB800E9DF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC931B5729953AB800E9DF5A /* ArtAdvisorWidgetBundle.swift in Sources */,
+				FC931B5B29953AB800E9DF5A /* ArtAdvisorWidget.swift in Sources */,
+				FC931B5929953AB800E9DF5A /* ArtAdvisorWidgetLiveActivity.swift in Sources */,
+				FCE6639C299578E600592838 /* UserModel.swift in Sources */,
+				FC931B6029953AB900E9DF5A /* ArtAdvisorWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +417,11 @@
 			isa = PBXTargetDependency;
 			target = FC931B1D29953A8A00E9DF5A /* ArtAdvisor */;
 			targetProxy = FC931B3929953A8A00E9DF5A /* PBXContainerItemProxy */;
+		};
+		FC931B6329953AB900E9DF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC931B4E29953AB800E9DF5A /* ArtAdvisorWidgetExtension */;
+			targetProxy = FC931B6229953AB900E9DF5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,11 +543,14 @@
 		FC931B4329953A8A00E9DF5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArtAdvisor/ArtAdvisor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ArtAdvisor/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F5YW995L7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -440,11 +574,14 @@
 		FC931B4429953A8A00E9DF5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArtAdvisor/ArtAdvisor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ArtAdvisor/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F5YW995L7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -537,6 +674,62 @@
 			};
 			name = Release;
 		};
+		FC931B6629953AB900E9DF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ArtAdvisorWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F5YW995L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtAdvisorWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ArtAdvisorWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verynicecode.ArtAdvisor.ArtAdvisorWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC931B6729953AB900E9DF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ArtAdvisorWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F5YW995L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtAdvisorWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ArtAdvisorWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verynicecode.ArtAdvisor.ArtAdvisorWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +765,15 @@
 			buildConfigurations = (
 				FC931B4929953A8A00E9DF5A /* Debug */,
 				FC931B4A29953A8A00E9DF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC931B6529953AB900E9DF5A /* Build configuration list for PBXNativeTarget "ArtAdvisorWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC931B6629953AB900E9DF5A /* Debug */,
+				FC931B6729953AB900E9DF5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

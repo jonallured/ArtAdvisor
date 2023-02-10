@@ -11,7 +11,7 @@ import SwiftUI
 struct ArtAdvisorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(currentUser: User.makeFake())
         }
     }
 }
