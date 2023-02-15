@@ -23,7 +23,7 @@ struct Provider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         Task {
-            let user = await User.makeMeQuery()
+            let user = User.read() ?? User.makeFake()
             
             var entries: [SimpleEntry] = []
 
@@ -52,8 +52,15 @@ struct ArtAdvisorWidgetEntryView : View {
     var body: some View {
         VStack {
             Text(entry.user.name).font(.system(size: 36)).lineLimit(1)
-            ForEach(entry.user.artworks) { artwork in
-                Text(artwork.title).lineLimit(1)
+            Divider()
+            Text("\(entry.user.artworks.count) artworksForUser")
+            ForEach(entry.user.artworks.prefix(2)) { artwork in
+                Text(artwork.title)
+            }
+            Divider()
+            Text("\(entry.user.notifications.count) notifications")
+            ForEach(entry.user.notifications.prefix(2)) { notification in
+                Text("\(notification.title): \(notification.message)")
             }
         }
     }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC813C5D299ADDFA000B06F2 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC813C5C299ADDFA000B06F2 /* KeychainStore.swift */; };
+		FC813C5E299ADFD1000B06F2 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC813C5C299ADDFA000B06F2 /* KeychainStore.swift */; };
+		FC813C60299AE7F6000B06F2 /* MetaphysicsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC813C5F299AE7F6000B06F2 /* MetaphysicsClient.swift */; };
+		FC813C61299AE7F6000B06F2 /* MetaphysicsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC813C5F299AE7F6000B06F2 /* MetaphysicsClient.swift */; };
 		FC931B2229953A8A00E9DF5A /* ArtAdvisorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC931B2129953A8A00E9DF5A /* ArtAdvisorApp.swift */; };
 		FC931B2429953A8A00E9DF5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC931B2329953A8A00E9DF5A /* ContentView.swift */; };
 		FC931B2629953A8A00E9DF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC931B2529953A8A00E9DF5A /* Assets.xcassets */; };
@@ -66,6 +70,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC11AA47299D461600F4B88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FC813C5C299ADDFA000B06F2 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		FC813C5F299AE7F6000B06F2 /* MetaphysicsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaphysicsClient.swift; sourceTree = "<group>"; };
 		FC931B1E29953A8A00E9DF5A /* ArtAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC931B2129953A8A00E9DF5A /* ArtAdvisorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtAdvisorApp.swift; sourceTree = "<group>"; };
 		FC931B2329953A8A00E9DF5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,12 +158,15 @@
 		FC931B2029953A8A00E9DF5A /* ArtAdvisor */ = {
 			isa = PBXGroup;
 			children = (
+				FC11AA47299D461600F4B88F /* Info.plist */,
 				FC931B6929953BFD00E9DF5A /* ArtAdvisor.entitlements */,
 				FC931B2129953A8A00E9DF5A /* ArtAdvisorApp.swift */,
 				FC931B2329953A8A00E9DF5A /* ContentView.swift */,
 				FC931B2529953A8A00E9DF5A /* Assets.xcassets */,
 				FC931B2729953A8A00E9DF5A /* Preview Content */,
 				FCE6639A299576B800592838 /* UserModel.swift */,
+				FC813C5C299ADDFA000B06F2 /* KeychainStore.swift */,
+				FC813C5F299AE7F6000B06F2 /* MetaphysicsClient.swift */,
 			);
 			path = ArtAdvisor;
 			sourceTree = "<group>";
@@ -372,7 +382,9 @@
 				FC931B2429953A8A00E9DF5A /* ContentView.swift in Sources */,
 				FC931B6129953AB900E9DF5A /* ArtAdvisorWidget.intentdefinition in Sources */,
 				FCE6639B299576B800592838 /* UserModel.swift in Sources */,
+				FC813C60299AE7F6000B06F2 /* MetaphysicsClient.swift in Sources */,
 				FC931B2229953A8A00E9DF5A /* ArtAdvisorApp.swift in Sources */,
+				FC813C5D299ADDFA000B06F2 /* KeychainStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +412,8 @@
 				FC931B5729953AB800E9DF5A /* ArtAdvisorWidgetBundle.swift in Sources */,
 				FC931B5B29953AB800E9DF5A /* ArtAdvisorWidget.swift in Sources */,
 				FC931B5929953AB800E9DF5A /* ArtAdvisorWidgetLiveActivity.swift in Sources */,
+				FC813C61299AE7F6000B06F2 /* MetaphysicsClient.swift in Sources */,
+				FC813C5E299ADFD1000B06F2 /* KeychainStore.swift in Sources */,
 				FCE6639C299578E600592838 /* UserModel.swift in Sources */,
 				FC931B6029953AB900E9DF5A /* ArtAdvisorWidget.intentdefinition in Sources */,
 			);
@@ -553,6 +567,7 @@
 				DEVELOPMENT_TEAM = 5F5YW995L7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtAdvisor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -584,6 +599,7 @@
 				DEVELOPMENT_TEAM = 5F5YW995L7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtAdvisor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
