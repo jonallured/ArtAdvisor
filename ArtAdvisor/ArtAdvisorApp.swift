@@ -11,7 +11,16 @@ import SwiftUI
 struct ArtAdvisorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(currentUser: User.makeFake())
+            TabView {
+                ContentView(currentUser: User.makeFake())
+                    .tabItem {
+                        Label("Content", systemImage: "list.dash")
+                    }
+                SyncEventsView()
+                    .tabItem {
+                        Label("Sync", systemImage: "arrow.triangle.2.circlepath")
+                    }
+            }
         }
     }
 }

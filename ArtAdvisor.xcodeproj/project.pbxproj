@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC11AA49299D646A00F4B88F /* SyncEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC11AA48299D646A00F4B88F /* SyncEventsView.swift */; };
 		FC813C5D299ADDFA000B06F2 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC813C5C299ADDFA000B06F2 /* KeychainStore.swift */; };
 		FC813C5E299ADFD1000B06F2 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC813C5C299ADDFA000B06F2 /* KeychainStore.swift */; };
 		FC813C60299AE7F6000B06F2 /* MetaphysicsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC813C5F299AE7F6000B06F2 /* MetaphysicsClient.swift */; };
@@ -71,6 +72,7 @@
 
 /* Begin PBXFileReference section */
 		FC11AA47299D461600F4B88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FC11AA48299D646A00F4B88F /* SyncEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncEventsView.swift; sourceTree = "<group>"; };
 		FC813C5C299ADDFA000B06F2 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		FC813C5F299AE7F6000B06F2 /* MetaphysicsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaphysicsClient.swift; sourceTree = "<group>"; };
 		FC931B1E29953A8A00E9DF5A /* ArtAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,7 @@
 				FCE6639A299576B800592838 /* UserModel.swift */,
 				FC813C5C299ADDFA000B06F2 /* KeychainStore.swift */,
 				FC813C5F299AE7F6000B06F2 /* MetaphysicsClient.swift */,
+				FC11AA48299D646A00F4B88F /* SyncEventsView.swift */,
 			);
 			path = ArtAdvisor;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				FC813C60299AE7F6000B06F2 /* MetaphysicsClient.swift in Sources */,
 				FC931B2229953A8A00E9DF5A /* ArtAdvisorApp.swift in Sources */,
 				FC813C5D299ADDFA000B06F2 /* KeychainStore.swift in Sources */,
+				FC11AA49299D646A00F4B88F /* SyncEventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
